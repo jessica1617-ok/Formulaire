@@ -6,47 +6,56 @@
   <title>Formulaire</title>
   <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
   <div id="form-box">
     <h1>Formulaire d'inscription</h1>
-   <form action="#">
 
-      <label for="name">Nom</label> <br>
+    <form action="#">
+      <label for="name">Nom</label><br>
       <input type="text" id="name" name="name" required placeholder="Ehiem"><br><br>
 
-      <label for="firstname">Prénom</label> <br>
+      <label for="firstname">Prénom</label><br>
       <input type="text" name="firstname" id="firstname" required placeholder="Jessica"><br><br>
 
-      <label for="email">Email</label> <br>
+      <label for="email">Email</label><br>
       <input type="email" id="email" name="email" required placeholder="myname@gmail.com"><br><br>
 
-      <label for="phone">Numéro de téléphone</label> <br>
+      <label for="phone">Numéro de téléphone</label><br>
       <input type="tel" id="phone" name="phone" required placeholder="0700000000" pattern="[0-9]{10}"><br><br>
 
       <fieldset>
         <legend>Genre</legend>
+
         <label for="man">
           <input type="radio" name="genre" required value="man" id="man"> Homme
         </label>
+
         <label for="woman">
           <input type="radio" name="genre" required value="woman" id="woman"> Femme
-        </label><br><br>
+        </label>
       </fieldset>
+
+      <br>
 
       <label for="niveau">Niveau d'études :</label>
       <select name="niveau" id="niveau" required>
-        <option value="" selected disabled> Choisissez votre niveau </option>
+        <option value="" selected disabled>Choisissez votre niveau</option>
         <option value="nothing">Aucun diplôme</option>
         <option value="primary">Primaire</option>
         <option value="college">Collège</option>
         <option value="bac">Baccalauréat</option>
-        <option value="licence">Licence(BAC+3)</option>
-        <option value="master">Master(BAC+5)</option>
-      </select><br><br>
+        <option value="licence">Licence (BAC+3)</option>
+        <option value="master">Master (BAC+5)</option>
+      </select>
+
+      <br><br>
 
       <label for="motivated">
-        <input type="checkbox" id="motivated" required> Je suis motivé
-      </label><br><br>
+        <input type="checkbox" id="motivated" name="motivated" required> Je suis motivé
+      </label>
+
+      <br><br>
 
       <div id="btn">
         <button type="submit">Valider</button>
